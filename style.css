@@ -1,13 +1,14 @@
-/* General styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #007bff;  /* Blue */
     color: white;
     padding: 1rem;
     text-align: center;
@@ -17,36 +18,33 @@ main {
     padding: 1rem;
 }
 
-/* Search section styles */
+/* Search Section Styles */
 #search {
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 #search input {
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    width: 80%;
-    max-width: 600px;
 }
 
 #search button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     border: none;
-    background-color: #007bff;
+    background-color: #28a745;  /* Green */
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #search button:hover {
-    background-color: #0056b3;
+    background-color: #218838;  /* Darker green */
 }
 
-/* News container styles */
+/* News Container Styles */
 #news-container {
     margin-top: 1rem;
 }
@@ -61,12 +59,11 @@ main {
 }
 
 .article h2 {
-    margin: 0 0 0.5rem;
-    color: #333;
+    margin: 0 0 0.5rem 0;
 }
 
 .article a {
-    color: #007bff;
+    color: #007bff;  /* Blue */
     text-decoration: none;
 }
 
@@ -74,11 +71,7 @@ main {
     text-decoration: underline;
 }
 
-.article p {
-    margin: 0;
-}
-
-/* Premium section styles */
+/* Premium Section Styles */
 #premium {
     background: #fff;
     border: 1px solid #ddd;
@@ -86,6 +79,7 @@ main {
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 1rem;
 }
 
 #premium h2 {
@@ -110,27 +104,32 @@ main {
     color: #333;
 }
 
-#premium button {
+.subscription {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+.subscription p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.subscription button {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     border: none;
-    background-color: #28a745;  /* Green */
+    background-color: #007bff;  /* Blue */
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#premium button:hover {
-    background-color: #218838;  /* Darker green */
-}
-
-/* Footer styles */
-footer {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.subscription button:hover {
+    background-color: #0056b3;  /* Darker blue */
 }
