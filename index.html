@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+    </header>
+    <main>
+        <section id="search">
+            <input type="text" id="topic" placeholder="Enter topic..." />
+            <button onclick="fetchArticles()">Search</button>
+        </section>
+        <section id="news-container"></section>
+        <section id="premium">
+            <h2>Premium Features</h2>
+            <div class="premium-description">
+                <p>Unlock advanced features for a more personalized and comprehensive news experience:</p>
+                <ul>
+                    <li>Exclusive In-Depth Analysis</li>
+                    <li>Customizable Comparison Tools</li>
+                </ul>
+            </div>
+            <button onclick="showPremiumMessage()">Subscribe Now</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 News Aggregator. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+

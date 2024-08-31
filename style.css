@@ -1,0 +1,136 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Search section styles */
+#search {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#search input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#search button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search button:hover {
+    background-color: #0056b3;
+}
+
+/* News container styles */
+#news-container {
+    margin-top: 1rem;
+}
+
+.article {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article h2 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.article a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.article p {
+    margin: 0;
+}
+
+/* Premium section styles */
+#premium {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#premium h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.premium-description {
+    margin-bottom: 1rem;
+}
+
+.premium-description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.premium-description li {
+    background: #e9ecef;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #333;
+}
+
+#premium button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #28a745;  /* Green */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#premium button:hover {
+    background-color: #218838;  /* Darker green */
+}
+
+/* Footer styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
