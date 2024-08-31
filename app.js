@@ -1,5 +1,5 @@
 const apiKey = '2b8ebb9977b94302b889375d4bbbce4a';  // Your NewsAPI key
-const corsProxy = 'https://api.allorigins.win/get?url=';  // CORS proxy
+const corsProxy = 'https://api.allorigins.win/raw?url=';  // CORS proxy
 
 async function fetchArticles() {
     const topic = document.getElementById('topic').value;
@@ -7,10 +7,9 @@ async function fetchArticles() {
     container.innerHTML = 'Loading articles...';
 
     try {
-        const apiUrl = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
-        const response = await fetch(`${corsProxy}${apiUrl}`);
-        const data = await response.json();
-        const parsedData = JSON.parse(data.contents);  // Parse the JSON response from the proxy
+        const apiUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(topic)}&apiKey=${apiKey}`;
+        const response = await fetch(`${corsProxy}${encodeURIComponent(apiUrl)}`);
+        const parsedData = await response.json();
 
         console.log('API Response:', parsedData);  // Log the response for debugging
 
@@ -36,5 +35,5 @@ async function fetchArticles() {
 }
 
 function showSubscriptionMessage() {
-    alert('Subscribe for $10 a month to get access to premium features. Payments are processed securely through our payment gateway.');
+    alert('Subscribe for $10 a month to get access to premium features. This feature is currently underdevelopment and will be shipped soon.');
 }
